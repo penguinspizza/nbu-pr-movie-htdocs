@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* ハンバーガーボタン押したらXに */
+button[aria-expanded="true"] > .navbar-toggler-icon {
+  background-image: url(../img/close_icon3.svg);
+}
+
+/* ナビバーのスタイル */
+.navbar {
+  background-color: rgb(235, 0, 130);
+  border-radius: 10px;
+  margin: 10px 10px 10px;
+}
+
+/* ナビバーの文字色とフォントサイズ */
+.navbar-nav li a {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* ハンバーガーの枠線の色 */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+  /* background-color: #fff; */
+}
+
+/* ハンバーガーの影を無しに */
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* ハンバーガーの色を変更 */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1.00%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ナビバーの文字にホバー・フォーカスした時の色 */
+.nav-link:focus,
+.nav-link:hover {
+  color: #fff;
+}
+
+/* ドロップダウンメニューのスタイル */
+.dropdown-menu {
+  background-color: rgb(235, 0, 130);
+  /* border: 1px solid rgba(255,255,255,.5); */
+  border: none;
+}
+
+/* ドロップダウンメニューの文字にホバー・フォーカスした時の色 */
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #fff;
+  background-color: rgb(235, 0, 130);
+}
+
+/* ドロップダウン展開時は三角形を逆向きに */
+a[aria-expanded="true"]::after {
+  border-bottom: 0.3em solid;
+  border-top: 0;
+}
