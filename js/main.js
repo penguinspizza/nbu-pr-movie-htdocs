@@ -1,7 +1,7 @@
 // IDにリンクしたときの位置をナビバーの高さ分だけ下にずらす
 $(function () {
   $('a[href^="#"]').click(function () {
-    var adjust = -80;
+    var adjust = -78;
     var speed = 0;
     var href = $(this).attr("href");
     var target = $(href == "#" || href == "" ? "html" : href);

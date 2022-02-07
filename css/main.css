@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+/*========= ナビバー ===============*/
+
 /* ハンバーガーボタン押したらXに */
 button[aria-expanded="true"] > .navbar-toggler-icon {
   background-image: url(../img/close_icon3.svg);
@@ -59,3 +61,238 @@ a[aria-expanded="true"]::after {
   border-bottom: 0.3em solid;
   border-top: 0;
 }
+
+/* ナビバーのロゴの無駄なパディングを消す */
+.navbar-brand {
+  padding: 0;
+}
+
+/* ハンバーガー左マージン(モバイル表示のときにNBUロゴを中央に表示するために必要) */
+.navbar-toggler {
+  margin-left: 44px;
+}
+
+/* モバイル表示のときにデスクトップ用NBUロゴを消す */
+@media screen and (max-width: 992px) {
+  #desktop-nbu-logo {
+    display: none;
+  }
+}
+
+/* デスクトップ表示のときにモバイル用NBUロゴを消す */
+@media screen and (min-width: 992px) {
+  #mobile-nbu-logo {
+    display: none !important;
+  }
+}
+
+/* デスクトップ表示のときにメニューリストを中央に持ってくる */
+.navbar-nav {
+  margin: 0 auto !important;
+}
+
+/* ナビバーのモバイル用プロパティ群 */
+@media screen and (max-width: 992px) {
+  /* リンク項目の上に破線 */
+  .nav-link-mobile {
+    border-top: dashed 1px rgba(255, 255, 255, 0.5);
+  }
+
+  /* ドロップダウンリンク項目の上に破線 */
+  .dropdown-item {
+    border-top: dashed 1px rgba(255, 255, 255, 0.5);
+  }
+
+  /* ドロップダウンの無駄なパディングとマージンを消して、20pxの左右インデント */
+  .dropdown-menu {
+    padding: 0;
+    margin: 0 20px 0 20px;
+  }
+
+  /* ドロップダウン昇降時のスタイルにも適用 */
+  .dropdown-menu[data-bs-popper] {
+    margin: 0 20px 0 20px;
+  }
+
+  /* ドロップダウン項目も他と同じような縦幅にする */
+  .dropdown-item {
+    padding: 8px 0px;
+  }
+
+  /* ドロップダウントグルボタンのスタイルをプラスマークに変更 */
+  .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0;
+    vertical-align: 0;
+    content: "";
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    background-image: url(../img/plus.svg);
+    width: 20px;
+    height: 20px;
+    top: 13.5px;
+    position: absolute;
+    right: 5px;
+  }
+
+  /* ドロップダウントグルボタンのスタイルをマイナスマークに変更 */
+  a[aria-expanded="true"]::after {
+    display: inline-block;
+    margin-left: 0;
+    vertical-align: 0;
+    content: "";
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    background-image: url(../img/minus.svg);
+    width: 20px;
+    height: 20px;
+    top: 13.5px;
+    position: absolute;
+    right: 5px;
+  }
+
+  /* リンク項目の右端に三角形をつける場所の設定のために、リンク項目の親を基準にするように設定 */
+  .nav-link-direct {
+    position: relative;
+  }
+
+  /* リンク項目の右端に三角形をつける */
+  .nav-link-direct::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    /* vertical-align: 0.255em; */
+    content: "";
+    border-left: 0.3em solid;
+    border-top: 0.3em solid transparent;
+    border-right: 0;
+    border-bottom: 0.3em solid transparent;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -6px;
+  }
+}
+
+/* デスクトップ表示のときにメニュ項目の間に線を設ける */
+@media screen and (min-width: 992px) {
+  /* すべての項目に右側に線 */
+  .nav-link-mobile {
+    border-right: solid 1px rgba(255, 255, 255, 0.5);
+  }
+
+  /* 最初の項目には左側の線も追加 */
+  .nav-link-mobile-first {
+    border-left: solid 1px rgba(255, 255, 255, 0.5);
+  }
+}
+
+/*========= ナビバー(END) ===============*/
+
+/*========= 背景動画設定のCSS ===============*/
+/* ↓↓参考サイト↓↓ */
+/* https://coco-factory.jp/ugokuweb/move01/6-3-1/ */
+
+/*header設定*/
+#header {
+  position: relative; /*h1の中央寄せ配置の起点とするためのrelative*/
+  height: 100vh; /*高さを全画面にあわせる*/
+}
+
+#video-area {
+  position: fixed;
+  z-index: -1; /*最背面に設定*/
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+#video {
+  /*天地中央配置*/
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*縦横幅指定*/
+  width: 177.77777778vh; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+  height: 56.25vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+  min-height: 100%;
+  min-width: 100%;
+}
+
+/*見出し設定*/
+#title-img {
+  /*要素の配置*/
+  position: absolute;
+  /*要素を天地中央寄せ*/
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 992px;
+}
+
+/* モバイル表示の時のタイトル画像の幅 */
+@media screen and (max-width: 992px) {
+  #title-img {
+    width: 100%;
+  }
+}
+
+/*========= 背景動画設定のCSS(END) ===============*/
+
+/*========= スクロールオブジェクト ===============*/
+
+/* スクロール誘導オブジェクト */
+.scdiv {
+  display: flex;
+  justify-content: center;
+}
+
+/* スクロール誘導オブジェクト矢印 */
+.scroll {
+  position: absolute;
+  bottom: 2em;
+  width: 3em;
+  height: 3em;
+}
+
+/* スクロール誘導オブジェクト矢印の詳細 */
+.scroll span {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 25%;
+  left: 33%;
+  transform: translateY(0) rotate(-45deg);
+  border-left: 2px solid #f5f5f5;
+  border-bottom: 2px solid #f5f5f5;
+  z-index: 2;
+  animation: popping-arrow 2s infinite ease-out;
+}
+
+/* スクロール誘導オブジェクトホバー時 */
+.scroll span:hover {
+  transform: translateY(0.5em) rotate(-45deg);
+  animation: paused;
+}
+
+/* スクロール誘導オブジェクトアニメーション */
+@keyframes popping-arrow {
+  0% {
+    transform: translateY(0) rotate(-45deg);
+  }
+  30% {
+    transform: translateY(0.5em) rotate(-45deg);
+  }
+  60% {
+    transform: translateY(0) rotate(-45deg);
+  }
+}
+
+/*========= スクロールオブジェクト(END) ===============*/
