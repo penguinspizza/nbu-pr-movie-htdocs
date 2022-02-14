@@ -296,3 +296,142 @@ a[aria-expanded="true"]::after {
 }
 
 /*========= スクロールオブジェクト(END) ===============*/
+
+/*========== section ==========*/
+
+/* ↓↓参考↓↓ */
+/* https://pulpxstyle.com/heading-design/ */
+
+/* ベース */
+.section-base {
+  background-color: #000;
+  padding: 12px 0 12px;
+}
+
+/* ベースのタイトル */
+.section-base div h2 {
+  margin: 0 0 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  text-align: center;
+}
+
+/* タイトルのデザイン */
+.section-base div h2::before,
+.section-base div h2::after {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background-color: rgb(235, 0, 130);
+}
+
+.section-base div h2::before {
+  margin-right: 20px;
+}
+.section-base div h2::after {
+  margin-left: 20px;
+}
+
+.section-base div p {
+  margin: 0;
+}
+
+/* 背景がマゼンタのセクション */
+.type1 {
+  background-color: rgb(255, 225, 242);
+}
+
+/* 背景がグレーのセクション */
+.type2 {
+  background-color: #f8f9fa;
+}
+
+/*========== section(END) ==========*/
+
+/* ======== 動画セクション ======== */
+
+.col {
+  margin: 12px 0 12px 0;
+}
+
+/* ボタンのスタイル */
+.btn-primary {
+  background: rgb(235, 0, 130); /* ボタンの背景色 */
+  border-color: rgb(235, 0, 130); /* 枠線の色 */
+  color: #fff; /* ボタンのテキストの色 */
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.btn-primary:active.focus,
+.btn-primary.active,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary,
+.open > .dropdown-toggle.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary.focus,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus {
+  background: rgb(
+    163,
+    0,
+    90
+  ); /* ボタンの上にポインタを持ってきたり、クリックしたりした時の背景色 */
+  border-color: rgb(163, 0, 90); /* 枠線の色 */
+  color: #fff; /* ボタンの上にポインタを持ってきたり、クリックしたりした時のテキストの色 */
+}
+
+.btn-primary:focus {
+  outline: solid 5px rgb(255, 225, 242);
+}
+
+/* ボタンのアイコン */
+.movie-icon {
+  display: inline;
+  background: url(../img/movie-icon2.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 健康栄養学科のカードボディ背景 */
+.card-body-kenko {
+  background-color: rgb(255, 225, 242);
+}
+
+/* フードビジネス学科のカードボディ背景 */
+.card-body-food {
+  background-color: #ffddc3;
+}
+
+/* 情報メディア学科のカードボディ背景 */
+.card-body-media {
+  background-color: rgb(211, 229, 255);
+}
+/* ======== 動画セクション(END) ======== */
+
+/* ==== フッター ==== */
+
+.footer {
+  background-color: rgb(235, 0, 130) !important;
+}
+
+.footer div span {
+  color: #fff !important;
+}
+
+/* ==== フッター(END) ==== */

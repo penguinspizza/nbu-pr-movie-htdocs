@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="100%" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 200 174.098" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<metadata>
+<vectornator:setting key="IsTimeLapseWatermarkDisabled" value="false"/>
+<vectornator:setting key="UndoHistoryDisabled" value="true"/>
+<vectornator:setting key="VNDimensionsVisible" value="true"/>
+<vectornator:setting key="VNSnapToGuides" value="true"/>
+<vectornator:setting key="WDCMYKEnabledKey" value="false"/>
+<vectornator:setting key="WDDisplayWhiteBackground" value="false"/>
+<vectornator:setting key="WDDynamicGuides" value="false"/>
+<vectornator:setting key="WDGuidesVisible" value="true"/>
+<vectornator:setting key="WDIsolateActiveLayer" value="false"/>
+<vectornator:setting key="WDOutlineMode" value="false"/>
+<vectornator:setting key="WDRulersVisible" value="true"/>
+<vectornator:setting key="WDSnapToEdges" value="false"/>
+<vectornator:setting key="WDSnapToGrid" value="false"/>
+<vectornator:setting key="WDSnapToPoints" value="false"/>
+<vectornator:setting key="WDUnits" value="Points"/>
+</metadata>
+<defs/>
+<g id="Untitled" vectornator:layerName="Untitled">
+<path d="M199.999 0L155.299 34.959L155.299 11.259C155.303 9.16249 154.472 7.15061 152.99 5.66815C151.507 4.18569 149.496 3.35474 147.399 3.359L7.899 3.359C5.80241 3.35447 3.79038 4.18534 2.30786 5.66786C0.82534 7.15038-0.00552548 9.1624-0.000998991 11.259L-0.000998991 97.131C-0.0055252 99.2276 0.82534 101.24 2.30786 102.722C3.79038 104.205 5.80241 105.036 7.899 105.031L58.005 105.031L22.793 162.043C20.4996 165.755 21.6498 170.624 25.362 172.917C29.0742 175.21 33.9426 174.06 36.236 170.348L76.575 105.031L81.315 105.031L121.656 170.348C123.949 174.06 128.818 175.21 132.53 172.917C136.242 170.624 137.392 165.755 135.099 162.043L99.882 105.031L147.399 105.031C149.496 105.035 151.507 104.204 152.99 102.722C154.472 101.239 155.303 99.2275 155.299 97.131L155.299 73.431L199.999 108.39L199.999 0Z" fill="#ffffff" opacity="1"/>
+</g>
+</svg>
