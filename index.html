@@ -27,11 +27,10 @@
   <header id="header">
     <nav class="navbar fixed-top navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="./img/nbu_doga_logo3_2.svg" alt="動画でわかる名古屋文理大学情報メディア学部" width="100"
+        <a class="navbar-brand" href="./"><img src="./img/nbu_doga_logo3_2.svg" alt="動画でわかる名古屋文理大学情報メディア学部" width="100"
             height="62" /></a>
-        <a class="nav-link d-flex justify-content-center" id="mobile-nbu-logo"
-          href="https://www.nagoya-bunri.ac.jp/"><img src="./img/nbu-logo-2-w2.svg" alt="名古屋文理大学" width="74"
-            height="30" /></a>
+        <a class="nav-link d-flex justify-content-center" id="mobile-nbu-logo" href="https://www.nagoya-bunri.ac.jp/"
+          target="_blank"><img src="./img/nbu-logo-2-w2.svg" alt="名古屋文理大学" width="74" height="30" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -39,37 +38,39 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item close-item"><a class="nav-link nav-link-mobile nav-link-mobile-first nav-link-direct"
-                href="#">About</a></li>
+                href="#about">About</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link nav-link-mobile dropdown-toggle" id="navbarDropdownMenuLink" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">授業紹介</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="navbarDropdownMenuBody">
-                <li><a class="dropdown-item nav-link-direct" href="#">健康栄養学科</a></li>
-                <li><a class="dropdown-item nav-link-direct" href="#">フードビジネス学科</a></li>
-                <li><a class="dropdown-item nav-link-direct" href="#">情報メディア学科</a></li>
+                <li><a class="dropdown-item nav-link-direct" href="./healthy-nutrition/">健康栄養学科</a></li>
+                <li><a class="dropdown-item nav-link-direct" href="./food/">フードビジネス学科</a></li>
+                <li><a class="dropdown-item nav-link-direct" href="./media/">情報メディア学科</a></li>
               </ul>
             </li>
-            <li class="nav-item close-item"><a class="nav-link nav-link-mobile nav-link-direct" href="#">学生インタビュー</a>
+            <li class="nav-item close-item"><a class="nav-link nav-link-mobile nav-link-direct"
+                href="./student-interview/">学生インタビュー</a>
             </li>
-            <li class="nav-item close-item"><a class="nav-link nav-link-mobile nav-link-direct" href="#">設備紹介</a></li>
-            <li class="nav-item close-item"><a class="nav-link nav-link-mobile nav-link-direct" href="#">クラブ・サークル紹介</a>
+            <li class="nav-item close-item"><a class="nav-link nav-link-mobile nav-link-direct"
+                href="./facility/">設備紹介</a></li>
+            <li class="nav-item close-item"><a class="nav-link nav-link-mobile nav-link-direct"
+                href="./club-circle/">クラブ・サークル紹介</a>
             </li>
-            <li class="nav-item close-item"><a class="nav-link nav-link-mobile nav-link-direct" href="#">SNS</a></li>
+            <li class="nav-item close-item"><a class="nav-link nav-link-mobile nav-link-direct" href="#sns">SNS</a></li>
           </ul>
           <span class="navbar-text" id="desktop-nbu-logo">
-            <a class="nav-link" href="https://www.nagoya-bunri.ac.jp/"><img src="./img/nbu-logo-2-w2.svg" alt="名古屋文理大学"
-                width="74" height="30" /></a>
+            <a class="nav-link" href="https://www.nagoya-bunri.ac.jp/" target="_blank"><img
+                src="./img/nbu-logo-2-w2.svg" alt="名古屋文理大学" width="74" height="30" /></a>
           </span>
         </div>
       </div>
     </nav>
     <img id="title-img" src="./img/nbu_doga_logo3_3.svg" alt="動画でわかる名古屋文理大学">
     <div class="scdiv">
-      <a class="scroll" href="#"><span></span></a>
+      <a class="scroll" href="#about"><span></span></a>
     </div>
     <div id="video-area">
-      <video id="video" poster="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-3-1/img/movie.jpg"
-        webkit-playsinline playsinline muted autoplay loop>
+      <video id="video" poster="./img/sample.jpg" webkit-playsinline playsinline muted autoplay loop>
         <!--
         poster：動画ファイルが利用できない環境で代替表示される画像
         webkit-playsinline：iOS 9までのSafari用インライン再生指定
@@ -90,13 +91,15 @@
   </header>
   <main>
     <article>
-      <section class="section-base type1">
-        <div class="container">
-          <h2>About</h2>
-          <p class="text-start" id="about-p">このサイトは名古屋文理大学情報メディア学部の講義や学生プロジェクト、その他学生のインタビューなどを動画でご紹介します。
-            動画は随時更新していく予定です。</p>
-        </div>
-      </section>
+      <div id="about">
+        <section class="section-base type1">
+          <div class="container">
+            <h2>About</h2>
+            <p class="text-start" id="about-p">このサイトは名古屋文理大学情報メディア学部の講義や学生プロジェクト、その他学生のインタビューなどを動画でご紹介します。
+              動画は随時更新していく予定です。</p>
+          </div>
+        </section>
+      </div>
       <section class="section-base type2">
         <div class="container">
           <h2>動画</h2>
@@ -106,7 +109,8 @@
                 <img src="./img/sample.jpg" class="card-img-top" alt="サンプル画像">
                 <div class="card-body">
                   <h5 class="card-title">健康栄養学科<br>授業紹介</h5>
-                  <a href="#" class="btn btn-primary"><span class="movie-icon">&emsp;</span>&ensp;動画を見る</a>
+                  <a href="./healthy-nutrition/" class="btn btn-primary"><span
+                      class="movie-icon">&emsp;</span>&ensp;動画を見る</a>
                 </div>
               </div>
             </div>
@@ -115,7 +119,7 @@
                 <img src="./img/sample.jpg" class="card-img-top" alt="サンプル画像">
                 <div class="card-body">
                   <h5 class="card-title">フードビジネス学科<br>授業紹介</h5>
-                  <a href="#" class="btn btn-primary"><span class="movie-icon">&emsp;</span>&ensp;動画を見る</a>
+                  <a href="./food/" class="btn btn-primary"><span class="movie-icon">&emsp;</span>&ensp;動画を見る</a>
                 </div>
               </div>
             </div>
@@ -124,7 +128,7 @@
                 <img src="./img/sample.jpg" class="card-img-top" alt="サンプル画像">
                 <div class="card-body">
                   <h5 class="card-title">情報メディア学科<br>授業紹介</h5>
-                  <a href="#" class="btn btn-primary"><span class="movie-icon">&emsp;</span>&ensp;動画を見る</a>
+                  <a href="./media/" class="btn btn-primary"><span class="movie-icon">&emsp;</span>&ensp;動画を見る</a>
                 </div>
               </div>
             </div>
@@ -133,7 +137,8 @@
                 <img src="./img/sample.jpg" class="card-img-top" alt="サンプル画像">
                 <div class="card-body">
                   <h5 class="card-title">学生インタビュー</h5>
-                  <a href="#" class="btn btn-primary"><span class="movie-icon">&emsp;</span>&ensp;動画を見る</a>
+                  <a href="./student-interview/" class="btn btn-primary"><span
+                      class="movie-icon">&emsp;</span>&ensp;動画を見る</a>
                 </div>
               </div>
             </div>
@@ -142,7 +147,7 @@
                 <img src="./img/sample.jpg" class="card-img-top" alt="サンプル画像">
                 <div class="card-body">
                   <h5 class="card-title">設備紹介</h5>
-                  <a href="#" class="btn btn-primary"><span class="movie-icon">&emsp;</span>&ensp;動画を見る</a>
+                  <a href="./facility/" class="btn btn-primary"><span class="movie-icon">&emsp;</span>&ensp;動画を見る</a>
                 </div>
               </div>
             </div>
@@ -151,59 +156,62 @@
                 <img src="./img/sample.jpg" class="card-img-top" alt="サンプル画像">
                 <div class="card-body">
                   <h5 class="card-title">クラブ・サークル紹介</h5>
-                  <a href="#" class="btn btn-primary"><span class="movie-icon">&emsp;</span>&ensp;動画を見る</a>
+                  <a href="./club-circle/" class="btn btn-primary"><span class="movie-icon">&emsp;</span>&ensp;動画を見る</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section-base type1">
-        <div class="container">
-          <h2>SNS</h2>
-          <div class="row row-cols-1 row-cols-xl-3 g-3">
-            <div class="col d-flex justify-content-center">
-              <div class="d-flex flex-column">
-                <h5 class="text-center mt-2">Twitter</h5>
-                <p class="text-center mb-2">名古屋文理大学の公式Twitterです。</p>
-                <p class="text-center mb-2">入試広報・学事課が運営しています。</p>
-                <p class="text-center mb-2">本学に関するニュースやイベント情報などを配信しています。</p>
-                <div class="d-flex justify-content-center">
-                  <a class="twitter-timeline" data-width="320" data-height="400" data-theme="light"
-                    href="https://twitter.com/NBU_PR?ref_src=twsrc%5Etfw">Tweets by NBU_PR</a>
+      <div id="sns">
+        <section class="section-base type1">
+          <div class="container">
+            <h2>SNS</h2>
+            <div class="row row-cols-1 row-cols-xl-3 g-3">
+              <div class="col d-flex justify-content-center">
+                <div class="d-flex flex-column">
+                  <h5 class="text-center mt-2">Twitter</h5>
+                  <p class="text-center mb-2">名古屋文理大学の公式Twitterです。</p>
+                  <p class="text-center mb-2">入試広報・学事課が運営しています。</p>
+                  <p class="text-center mb-2">本学に関するニュースやイベント情報などを配信しています。</p>
+                  <div class="d-flex justify-content-center">
+                    <a class="twitter-timeline" data-width="320" data-height="400" data-theme="light"
+                      href="https://twitter.com/NBU_PR?ref_src=twsrc%5Etfw">Tweets by NBU_PR</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col d-flex justify-content-center">
-              <div class="d-flex flex-column">
-                <h5 class="text-center mt-2">Instagram</h5>
-                <p class="text-center mb-2">名古屋文理大学公式&emsp;nbu_pr</p>
-                <p class="text-center mb-2">入試広報・学事課が運営しています。</p>
-                <p class="text-center mb-2">学食の写真が多めでご紹介しています。</p>
-                <a class="text-center" href="https://www.instagram.com/nbu_pr/"><img src="./img/sns-logo-instagrum.png"
-                    width="130px" alt="Instagramのアイコン" /></a>
-                <div class="d-flex justify-content-center">
-                  <a class="link-primary" href="https://www.instagram.com/nbu_pr/">https://www.instagram.com/nbu_pr/</a>
+              <div class="col d-flex justify-content-center">
+                <div class="d-flex flex-column">
+                  <h5 class="text-center mt-2">Instagram</h5>
+                  <p class="text-center mb-2">名古屋文理大学公式&emsp;nbu_pr</p>
+                  <p class="text-center mb-2">入試広報・学事課が運営しています。</p>
+                  <p class="text-center mb-2">学食の写真が多めでご紹介しています。</p>
+                  <a class="text-center" href="https://www.instagram.com/nbu_pr/"><img
+                      src="./img/sns-logo-instagrum.png" width="130px" alt="Instagramのアイコン" /></a>
+                  <div class="d-flex justify-content-center">
+                    <a class="link-primary" href="https://www.instagram.com/nbu_pr/"
+                      target="_blank">https://www.instagram.com/nbu_pr/</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col d-flex justify-content-center">
-              <div class="d-flex flex-column">
-                <h5 class="text-center mt-2">LINE</h5>
-                <p class="text-center mb-2">名古屋文理大学公式LINE（受験生向け）</p>
-                <p class="text-center mb-2">入試広報・学事課が運営しています。</p>
-                <p class="text-center mb-2">オープンキャンパスや入試など受験生のためのイベント情報発信やお問い合わせに利用しています。</p>
-                <a class="text-center" href="https://www.instagram.com/nbu_pr/"><img src="./img/LINE_Brand_icon.png"
-                    width="130px" alt="LINEのアイコン" /></a>
-                <div class="d-flex justify-content-center">
-                  <a class="link-primary"
-                    href="https://page.line.me/nagoyabunriuniv">https://page.line.me/nagoyabunriuniv</a>
+              <div class="col d-flex justify-content-center">
+                <div class="d-flex flex-column">
+                  <h5 class="text-center mt-2">LINE</h5>
+                  <p class="text-center mb-2">名古屋文理大学公式LINE（受験生向け）</p>
+                  <p class="text-center mb-2">入試広報・学事課が運営しています。</p>
+                  <p class="text-center mb-2">オープンキャンパスや入試など受験生のためのイベント情報発信やお問い合わせに利用しています。</p>
+                  <a class="text-center" href="https://www.instagram.com/nbu_pr/"><img src="./img/LINE_Brand_icon.png"
+                      width="130px" alt="LINEのアイコン" /></a>
+                  <div class="d-flex justify-content-center">
+                    <a class="link-primary" href="https://page.line.me/nagoyabunriuniv"
+                      target="_blank">https://page.line.me/nagoyabunriuniv</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </article>
   </main>
   <footer class="footer mt-auto py-3 bg-light">

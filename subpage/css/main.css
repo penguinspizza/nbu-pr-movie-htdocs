@@ -4,7 +4,7 @@
 
 /* ハンバーガーボタン押したらXに */
 button[aria-expanded="true"] > .navbar-toggler-icon {
-  background-image: url(../img/close_icon3.svg);
+  background-image: url(../../img/close_icon3.svg);
 }
 
 /* ナビバーのスタイル */
@@ -130,7 +130,7 @@ a[aria-expanded="true"]::after {
     border-right: none;
     border-bottom: none;
     border-left: none;
-    background-image: url(../img/plus.svg);
+    background-image: url(../../img/plus.svg);
     width: 20px;
     height: 20px;
     top: 13.5px;
@@ -148,7 +148,7 @@ a[aria-expanded="true"]::after {
     border-right: none;
     border-bottom: none;
     border-left: none;
-    background-image: url(../img/minus.svg);
+    background-image: url(../../img/minus.svg);
     width: 20px;
     height: 20px;
     top: 13.5px;
@@ -198,111 +198,6 @@ a[aria-expanded="true"]::after {
 
 /*========= ナビバー(END) ===============*/
 
-/*========= 背景動画設定のCSS ===============*/
-/* ↓↓参考サイト↓↓ */
-/* https://coco-factory.jp/ugokuweb/move01/6-3-1/ */
-
-/*header設定*/
-#header {
-  position: relative; /*h1の中央寄せ配置の起点とするためのrelative*/
-  height: 100vh; /*高さを全画面にあわせる*/
-}
-
-#video-area {
-  position: fixed;
-  z-index: -1; /*最背面に設定*/
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
-}
-
-#video {
-  /*天地中央配置*/
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /*縦横幅指定*/
-  width: 177.77777778vh; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
-  height: 56.25vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
-  min-height: 100%;
-  min-width: 100%;
-}
-
-/*見出し設定*/
-#title-img {
-  /*要素の配置*/
-  position: absolute;
-  /*要素を天地中央寄せ*/
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  width: 992px;
-}
-
-/* モバイル表示の時のタイトル画像の幅 */
-@media screen and (max-width: 992px) {
-  #title-img {
-    width: 100%;
-  }
-}
-
-/*========= 背景動画設定のCSS(END) ===============*/
-
-/*========= スクロールオブジェクト ===============*/
-
-/* スクロール誘導オブジェクト */
-.scdiv {
-  display: flex;
-  justify-content: center;
-}
-
-/* スクロール誘導オブジェクト矢印 */
-.scroll {
-  position: absolute;
-  bottom: 2em;
-  width: 3em;
-  height: 3em;
-}
-
-/* スクロール誘導オブジェクト矢印の詳細 */
-.scroll span {
-  width: 2em;
-  height: 2em;
-  position: absolute;
-  top: 25%;
-  left: 33%;
-  transform: translateY(0) rotate(-45deg);
-  border-left: 2px solid #f5f5f5;
-  border-bottom: 2px solid #f5f5f5;
-  z-index: 2;
-  animation: popping-arrow 2s infinite ease-out;
-}
-
-/* スクロール誘導オブジェクトホバー時 */
-.scroll span:hover {
-  transform: translateY(0.5em) rotate(-45deg);
-  animation: paused;
-}
-
-/* スクロール誘導オブジェクトアニメーション */
-@keyframes popping-arrow {
-  0% {
-    transform: translateY(0) rotate(-45deg);
-  }
-  30% {
-    transform: translateY(0.5em) rotate(-45deg);
-  }
-  60% {
-    transform: translateY(0) rotate(-45deg);
-  }
-}
-
-/*========= スクロールオブジェクト(END) ===============*/
-
 /*========== section ==========*/
 
 /* ↓↓参考↓↓ */
@@ -311,7 +206,7 @@ a[aria-expanded="true"]::after {
 /* ベース */
 .section-base {
   background-color: #000;
-  padding: 12px 0 12px;
+  padding: 100px 0 12px;
 }
 
 /* ベースのタイトル */
@@ -322,6 +217,13 @@ a[aria-expanded="true"]::after {
   align-items: center;
   font-size: 26px;
   text-align: center;
+}
+
+/* ベースのタイトル（モバイル表示） */
+@media screen and (max-width: 575px) {
+  .section-base div h2 {
+    font-size: 16px;
+  }
 }
 
 /* タイトルのデザイン */
@@ -358,93 +260,43 @@ a[aria-expanded="true"]::after {
   background-color: #f8f9fa;
 }
 
-/*========== section(END) ==========*/
-
-/* ======== 動画セクション ======== */
-
-.col {
-  margin: 12px 0 12px 0;
-}
-
-/* ボタンのスタイル */
-.btn-primary {
-  background: rgb(235, 0, 130); /* ボタンの背景色 */
-  border-color: rgb(235, 0, 130); /* 枠線の色 */
-  color: #fff; /* ボタンのテキストの色 */
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary:active:focus,
-.btn-primary:active:hover,
-.btn-primary:active.focus,
-.btn-primary.active,
-.btn-primary.active:focus,
-.btn-primary.active:hover,
-.btn-primary.active.focus,
-.open > .dropdown-toggle.btn-primary,
-.open > .dropdown-toggle.btn-primary:hover,
-.open > .dropdown-toggle.btn-primary:focus,
-.open > .dropdown-toggle.btn-primary.focus,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled.focus,
-.btn-primary[disabled].focus,
-fieldset[disabled] .btn-primary.focus {
-  background: rgb(
-    163,
-    0,
-    90
-  ); /* ボタンの上にポインタを持ってきたり、クリックしたりした時の背景色 */
-  border-color: rgb(163, 0, 90); /* 枠線の色 */
-  color: #fff; /* ボタンの上にポインタを持ってきたり、クリックしたりした時のテキストの色 */
-}
-
-.btn-primary:focus {
-  outline: solid 5px rgb(255, 225, 242);
-}
-
-/* ボタンのアイコン */
-.movie-icon {
-  display: inline;
-  background: url(../img/movie-icon2.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* 健康栄養学科のカードボディ背景 */
-.card-body-kenko {
-  background-color: rgb(255, 225, 242);
-}
-
-/* フードビジネス学科のカードボディ背景 */
-.card-body-food {
+/* 背景がオレンジのセクション */
+.type3 {
   background-color: #ffddc3;
 }
 
-/* 情報メディア学科のカードボディ背景 */
-.card-body-media {
+/* 背景がブルーのセクション */
+.type4 {
   background-color: rgb(211, 229, 255);
 }
 
-.card {
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
-  border: none;
-}
-/* ======== 動画セクション(END) ======== */
+/*========== section(END) ==========*/
 
-/* ======== SNSセクション ======== */
-#twitter-widget-0 {
+/* ======== 動画一覧セクション ======== */
+/* YoutubeIframeのサイズをレスポンシブにして、影をつける */
+.video {
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0px;
+  position: relative;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
 }
-/* ======== SNSセクション(END) ======== */
+
+/* YoutubeIframeのサイズをレスポンシブに */
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ガーターを調整 */
+.col {
+  margin-top: 12px;
+}
+
+/* ======== 動画一覧セクション(END) ======== */
 
 /* ==== フッター ==== */
 
@@ -457,13 +309,3 @@ fieldset[disabled] .btn-primary.focus {
 }
 
 /* ==== フッター(END) ==== */
-
-/* ==== idリンクの高さ合わせ ==== */
-
-#about,
-#sns {
-  padding-top: 98px;
-  margin-top: -98px;
-}
-
-/* ==== idリンクの高さ合わせ(END) ==== */
